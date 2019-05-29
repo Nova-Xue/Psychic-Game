@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>enter a letter <span id="input"></span></div>
+    <div>guess history:<span id="guess"></span></div>
+    <div>your guess left : <span id="guessLeft">10</span></div>
+    <div>wins : <span id="win"></span></div>
+    <div>loss : <span id="loss"></span></div>
+    <script type="text/javascript" src="javascript/game.js">
+        // var answer;
+        // var guess = document.getElementById("guess");
+        // var guessLeft = document.getElementById("guessLeft");
+        // var win = 0;
+        // var loss = 0;
+        // var count = 0;
+        // var history = [];
+        // function getRandomLetter() {
+        //     var randomIndex = Math.floor(Math.random() * 26);
+        //     answer = "abcdefghijklmnopqrstuvwxyz".charAt(randomIndex);
+
+        // }
+        // getRandomLetter();
+        // alert(answer);
+        // document.onkeyup = function (e){
+        //     var realKey = e.key.toLowerCase();
+        //     //restrict key from a to z
+        //     var boolKey = e.which>64 && e.which< 91;
+        //     //no more guess
+        //     if (count == 10) {
+        //         count = 0;
+        //         guess.innerHTML = "";
+        //         guessLeft.innerHTML = "10";
+        //         alert("you have no more chance!the right answer is " + answer);
+        //         loss++;
+        //         document.getElementById("loss").innerHTML= loss;
+        //         getRandomLetter();
+        //         alert("next letter is " + answer);
+
+        //     } else if (boolKey && realKey != answer) {
+        //         //a letter but not the answer
+        //         if(guess.innerHTML.includes(realKey)){
+        //             //repeated letter
+        //             alert("You have entered this letter");
+        //         }else{
+        //             //new letter
+        //             guess.innerHTML += realKey;
+        //             count++;
+        //             guessLeft.innerHTML = (10- count);
+        //         }
+        //         //answer
+        //     } else if (boolKey && realKey == answer) {
+        //         count = 0;
+        //         guess.innerHTML = "";
+        //         guessLeft.innerHTML = "10"
+        //         alert("you win! the answer is " + answer);
+        //         win++;
+        //         document.getElementById("win").innerHTML= win;
+        //         getRandomLetter();
+        //         alert("next letter is " + answer);
+        //     } else { 
+        //         //not a letter
+        //         alert("please enter a letter");
+        //     }
+
+        // }
+    </script>
+</body>
+
+</html>
